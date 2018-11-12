@@ -48,9 +48,11 @@ class Vtiger(object):
         return v
 
     def post(self, operation=None, url='/webservice.php', **kwargs):
-        r = requests.post(self.endpoint+url, self.set_formparams(operation))
+        r = requests.post(self.endpoint+url,
+                          self.set_formparams(operation, **kwargs))
         return r
 
     def get(self, operation=None, url='/webservice.php', **kwargs):
-        r = requests.post(self.endpoint+url, self.set_formparams(operation))
+        r = requests.get(self.endpoint+url,
+                         params=self.set_formparams(operation, **kwargs))
         return r
