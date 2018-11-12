@@ -40,8 +40,8 @@ class Vtiger(object):
                 raise Exception(r.json())
         else:
             raise Exception(r.json())
-            
-    def set_formparams(self,operation=None,**kwargs):
+
+    def set_formparams(self, operation=None, **kwargs):
         v = {**{'operation': operation, 'sessionName': self.sessionName}, **kwargs}
         if v['operation'] is None:
             v.pop('operation')
