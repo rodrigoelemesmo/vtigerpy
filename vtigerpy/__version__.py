@@ -1,6 +1,6 @@
-"""Version details for tigermal"""
+"""Version details for vtigerpy"""
 
-__title__ = "tigermal"
+__title__ = "vtigerpy"
 __description__ = "A basic VTiger interface"
 __url__ = ""
 __version__ = "0.0.1"

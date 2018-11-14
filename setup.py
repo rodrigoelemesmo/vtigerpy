@@ -9,7 +9,7 @@ pyver_tests_require = []
 here = os.path.abspath(os.path.dirname(__file__))
 
 about = {}
-with open(os.path.join(here, 'tigermal', '__version__.py'), 'r') as f:
+with open(os.path.join(here, 'vtigerpy', '__version__.py'), 'r') as f:
     exec(f.read(), about)
 
 
@@ -20,7 +20,7 @@ setup(
     author_email=about['__author_email__'],
     maintainer=about['__maintainer__'],
     maintainer_email=about['__maintainer_email__'],
-    packages=['tigermal', ],
+    packages=['vtigerpy', ],
     url=about['__url__'],
     license=about['__license__'],
     description=about['__description__'],
