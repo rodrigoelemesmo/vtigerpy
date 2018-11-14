@@ -1,1 +1,16 @@
-Install with: `pip3 install -e git+https://rodrigoelemesmo@bitbucket.org/rodrigoelemesmo/vtigerpy.git#egg=vtigerpy`
+Install with:
+```
+pip install vtigerpy
+```
+
+Authentication:
+```
+vtiger = Vtiger(endpoint='http://localhost',username='<username>',accessKey='<access_key>')
+```
+
+Webservice:
+```
+import json
+res = vtiger.post(operation='listTypes')
+res.json()
+```
